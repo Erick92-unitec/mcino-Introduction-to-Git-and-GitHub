@@ -1,0 +1,59 @@
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git branch
+* bug-fix-typo
+  main
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ nano README.md 
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git add README.md 
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git status
+On branch bug-fix-typo
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git commit -m "Archivo Readme.md actualizado"
+[bug-fix-typo 9b2ae6b] Archivo Readme.md actualizado
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ 
+
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git config --global user.name Erick92-unitec
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$
+
+
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git confi
+g --global user.email erick_esau@unitec.edu
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ 
+
+
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git push origin bug-fix-typo
+Username for 'https://github.com': Erick92-unitec
+Password for 'https://Erick92-unitec@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 2), reused 2 (delta 2), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'bug-fix-typo' on GitHub by visiting:
+remote:      https://github.com/Erick92-unitec/mcino-Introduction-to-Git-and-GitHub/pull/new/bug-fix-typo
+remote: 
+To https://github.com/Erick92-unitec/mcino-Introduction-to-Git-and-GitHub.git
+ * [new branch]      bug-fix-typo -> bug-fix-typo
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$
+
+
+
+
+
+
+
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git merge bug-fix-typo
+Updating 7e949c8..9b2ae6b
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ 
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ 
