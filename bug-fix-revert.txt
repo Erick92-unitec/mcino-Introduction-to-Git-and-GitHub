@@ -1,0 +1,65 @@
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git checkout -b bug-fix-revert
+Switched to a new branch 'bug-fix-revert'
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ 
+
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git revert HEAD     
+[bug-fix-revert f8cdccf] Revert "Archivo Readme.md actualizado"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ 
+
+
+
+
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git branch
+* bug-fix-revert
+  bug-fix-typo
+  main
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ cat README.md 
+# Introduction to Git and GitHub
+
+## Simple Interest Calculator
+
+A calculator that calculates simple interest given principal, annual rate of interest and time period in years.
+
+```
+Input:
+   p, principal amount
+   t, time period in years
+   r, annual rate of interest
+Output
+   simple interest = p*t*r
+```
+
+_© 2022 XYZ, Inc._
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ 
+
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git add README.md 
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git commit -m "revert realizado"
+On branch bug-fix-revert
+nothing to commit, working tree clean
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ 
+
+
+
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git push origin bug-fix-revert
+Username for 'https://github.com': Erick92-unitec
+Password for 'https://Erick92-unitec@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 341 bytes | 341.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'bug-fix-revert' on GitHub by visiting:
+remote:      https://github.com/Erick92-unitec/mcino-Introduction-to-Git-and-GitHub/pull/new/bug-fix-revert
+remote: 
+To https://github.com/Erick92-unitec/mcino-Introduction-to-Git-and-GitHub.git
+ * [new branch]      bug-fix-revert -> bug-fix-revert
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ 
+
+
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ curl -s https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/8812 | jq -r '.head.repo.clone_url'
+https://github.com/Erick92-unitec/mcino-Introduction-to-Git-and-GitHub.git
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ 
