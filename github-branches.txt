@@ -1,0 +1,5 @@
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ git branch -vv
+  bug-fix-revert f8cdccf Revert "Archivo Readme.md actualizado"
+  bug-fix-typo   9b2ae6b Archivo Readme.md actualizado
+* main           9b2ae6b [origin/main: ahead 1] Archivo Readme.md actualizado
+theia@theia-erickesau:/home/project/mcino-Introduction-to-Git-and-GitHub$ 
